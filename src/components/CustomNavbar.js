@@ -1,12 +1,13 @@
 import React from 'react'
+import logo from '../images/Aurelius.png'
 
 
 function CustomNavbar() {
   return (
    <nav className='nav'>
-    <div className='signup__discount'>20% off when you sign up with email</div>
+    <div className='signup__discount'><p>20% off when you sign up with email</p></div>
     <div className="navbar">
-      <a href="#" className="brand">Aurelius</a>
+      <img src={logo} />
       <span className='mid_link'>
         <a href="#" className="nav__link">Shop</a>
         <a href="#" className="nav__link">Back to school</a>

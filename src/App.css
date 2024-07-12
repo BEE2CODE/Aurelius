@@ -1,39 +1,58 @@
+
 *{
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style-type: none;
   color: #111111;
+  font-weight: 400;
 }
-.nav{
- 
-  width: 100%;
+
+body{
+  background-color: #f7f7f7;
+  font-family: Satoshi;
 }
+@font-face {
+  font-family: Satoshi;
+  src: url(../public/Satoshi-Variable.ttf);
+}
+
 .signup__discount {
   background: #EEEBD0;
+
   width: 100%;
-  padding: 20px;
   font-family: 'Satoshi';
   font-size: 16px;
   text-align: center;
   
 }
+.signup__discount p{
+  padding: 15px;
+}
 
 .navbar{
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 50px;
   border-bottom: 1px solid #111111;
 
 }
-.nav__menu,.mid_link, a{
-  padding-left: 20px 39px;
+.navbar a{
+  padding: 25px;
+  z-index: 99;
+  
 }
-
+.navbar a:hover{
+  font-weight: 800;
+  text-decoration: underline 5px;
+  
+}
 .home__text{
   width: 395px;
   height: 75px;
-  padding: 30px;
+  padding: 50px;
 }
+
 .explore{
   font-size: 32px;
   line-height: 43.2px;
@@ -44,3 +63,118 @@
   font-weight: 400;
   line-height: 24.3px;
 }
+.category__fifty-nine{
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.category__sort {
+  display: flex;
+}
+.category__sort li{
+  justify-content: space-between;
+}
+select {
+  border: none;
+  margin-right: 25px;
+  background-color: #f7f7f7;
+}
+
+
+/* productList */
+
+.mystyle{
+font-size: 16px;
+font-weight: 400;
+line-height: 21.6px;
+}
+.products{
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-image{
+  /* width: Fill (440px)px;
+  height: Hug (99px)px;
+  gap: 12px;
+  opacity: 0px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:12px;
+    padding: 30px;
+
+}
+.show-more_btn{
+  padding: 80px 0 ;
+}
+
+.show-more_btn p{
+  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  text-align: center;
+  padding-bottom: 10px;
+  
+
+}
+.show-more_btn button{
+  width:  (322px);
+  height: (48px);
+  padding: 13px 119px 13px 119px;
+  gap: 10px;
+  opacity: 0px;
+  background-color: #111111;
+  color: #F7F7F7;
+ 
+}
+
+/* Footer */
+
+.footer{
+  text-align: center;
+  padding-top: 80px ;
+  height: 514px;
+  
+}
+.footer p{
+  padding: 22px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  
+
+}
+
+.input-email{
+  margin-top: 30px;
+}
+.subscribe-btn{
+  padding: 12px 24px;
+  background: #111111;
+  color: #F7F7F7;
+  margin-left: 16px;
+}
+input{
+  width: 369px;
+  height: 48px;
+  border: none;
+  border-bottom: 1px solid;
+  font-size: 16px;
+}
+.copywrite{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 165px;
+  background: #ffff;
+ 
+}
+ 
+.copywrite a{
+  padding: 25px;
+}
+
